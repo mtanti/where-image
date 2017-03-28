@@ -1,0 +1,54 @@
+PROBABILITY MEASURES
+experiment	pplx_geomean	pplx_artmean	pplx_median
+merge_add_srnn	20.812	43.040	18.054
+merge_concat_srnn	20.971	49.812	17.981
+inject_post_srnn	21.810	102.489	18.402
+inject_par_srnn	21.991	60.842	18.712
+merge_mult_srnn	22.268	53.501	19.053
+inject_init_srnn	24.220	83.403	20.456
+inject_pre_srnn	24.279	88.050	20.695
+langmodel_srnn	28.822	84.552	24.292
+
+GENERATION MEASURES 1
+experiment	cider	meteor	rougel
+merge_add_srnn	0.337	0.157	0.397
+inject_post_srnn	0.333	0.156	0.392
+merge_mult_srnn	0.319	0.155	0.393
+merge_concat_srnn	0.316	0.152	0.388
+inject_par_srnn	0.297	0.148	0.381
+inject_init_srnn	0.256	0.147	0.381
+inject_pre_srnn	0.238	0.144	0.371
+langmodel_srnn	0.085	0.097	0.260
+
+GENERATION MEASURES 2
+experiment	bleu1	bleu2	bleu3	bleu4
+merge_add_srnn	0.578	0.385	0.254	0.164
+merge_mult_srnn	0.562	0.379	0.252	0.166
+inject_post_srnn	0.555	0.375	0.249	0.164
+merge_concat_srnn	0.551	0.366	0.241	0.156
+inject_init_srnn	0.546	0.356	0.229	0.147
+inject_pre_srnn	0.535	0.347	0.224	0.144
+inject_par_srnn	0.529	0.354	0.234	0.151
+langmodel_srnn	0.415	0.192	0.106	0.064
+
+DIVERSITY MEASURES
+experiment	known_vocab_used	unigram_entropy	bigram_entropy
+merge_concat_srnn	6.560%	5.756	7.596
+merge_add_srnn	5.926%	5.625	7.399
+inject_par_srnn	5.737%	5.722	7.548
+merge_mult_srnn	5.391%	5.567	7.307
+inject_post_srnn	5.260%	5.646	7.465
+inject_init_srnn	3.444%	5.413	7.092
+inject_pre_srnn	3.242%	5.391	6.970
+langmodel_srnn	0.121%	3.154	3.057
+
+RETRIEVAL MEASURES
+experiment	R@1	R@5	R@10
+merge_add_srnn	21.913%	47.740%	59.420%
+merge_concat_srnn	21.833%	47.420%	59.647%
+inject_post_srnn	20.987%	46.233%	58.653%
+merge_mult_srnn	18.900%	43.820%	56.033%
+inject_par_srnn	18.040%	42.120%	54.993%
+inject_init_srnn	7.233%	22.093%	33.013%
+inject_pre_srnn	7.100%	22.267%	32.980%
+

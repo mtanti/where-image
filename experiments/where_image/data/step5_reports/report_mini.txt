@@ -1,0 +1,105 @@
+PROBABILITY MEASURES
+experiment	pplx_geomean	pplx_artmean	pplx_median
+vinyals	18.405	36.507	16.029
+merge_concat_lstm	18.740	41.934	16.236
+inject_post_lstm	18.868	45.652	16.143
+merge_add_lstm	18.943	38.647	16.500
+inject_init_lstm	19.108	43.358	16.435
+inject_par_lstm	19.142	41.422	16.629
+inject_pre_lstm	19.228	45.984	16.586
+mao	19.404	40.023	16.961
+merge_add_srnn	20.812	43.040	18.054
+merge_concat_srnn	20.971	49.812	17.981
+inject_post_srnn	21.810	102.489	18.402
+inject_par_srnn	21.991	60.842	18.712
+merge_mult_srnn	22.268	53.501	19.053
+merge_mult_lstm	23.655	96.770	19.939
+inject_init_srnn	24.220	83.403	20.456
+inject_pre_srnn	24.279	88.050	20.695
+langmodel_lstm	24.740	55.003	20.914
+langmodel_srnn	28.822	84.552	24.292
+
+GENERATION MEASURES 1
+experiment	cider	meteor	rougel
+merge_add_srnn	0.337	0.157	0.397
+merge_mult_lstm	0.337	0.158	0.399
+inject_post_srnn	0.333	0.156	0.392
+merge_add_lstm	0.331	0.156	0.394
+mao	0.325	0.156	0.395
+merge_concat_lstm	0.320	0.155	0.393
+inject_post_lstm	0.320	0.152	0.386
+merge_mult_srnn	0.319	0.155	0.393
+inject_par_lstm	0.318	0.152	0.388
+merge_concat_srnn	0.316	0.152	0.388
+inject_par_srnn	0.297	0.148	0.381
+inject_pre_lstm	0.291	0.150	0.383
+vinyals	0.290	0.148	0.379
+inject_init_lstm	0.281	0.146	0.379
+inject_init_srnn	0.256	0.147	0.381
+inject_pre_srnn	0.238	0.144	0.371
+langmodel_srnn	0.085	0.097	0.260
+langmodel_lstm	0.070	0.090	0.260
+
+GENERATION MEASURES 2
+experiment	bleu1	bleu2	bleu3	bleu4
+merge_add_srnn	0.578	0.385	0.254	0.164
+merge_mult_lstm	0.575	0.390	0.260	0.170
+merge_add_lstm	0.569	0.378	0.249	0.162
+merge_concat_lstm	0.569	0.374	0.243	0.156
+merge_mult_srnn	0.562	0.379	0.252	0.166
+mao	0.561	0.377	0.249	0.162
+inject_post_srnn	0.555	0.375	0.249	0.164
+merge_concat_srnn	0.551	0.366	0.241	0.156
+inject_init_srnn	0.546	0.356	0.229	0.147
+inject_par_lstm	0.544	0.365	0.240	0.155
+inject_post_lstm	0.542	0.366	0.242	0.158
+inject_pre_lstm	0.540	0.357	0.230	0.147
+inject_pre_srnn	0.535	0.347	0.224	0.144
+vinyals	0.535	0.354	0.228	0.144
+inject_init_lstm	0.530	0.350	0.223	0.141
+inject_par_srnn	0.529	0.354	0.234	0.151
+langmodel_srnn	0.415	0.192	0.106	0.064
+langmodel_lstm	0.401	0.176	0.099	0.059
+
+DIVERSITY MEASURES
+experiment	known_vocab_used	unigram_entropy	bigram_entropy
+merge_concat_srnn	6.560%	5.756	7.596
+mao	6.339%	5.815	7.754
+merge_concat_lstm	6.321%	5.729	7.620
+merge_add_lstm	6.231%	5.736	7.620
+inject_post_lstm	6.169%	5.931	7.894
+merge_add_srnn	5.926%	5.625	7.399
+inject_par_lstm	5.795%	5.832	7.756
+inject_par_srnn	5.737%	5.722	7.548
+merge_mult_lstm	5.710%	5.591	7.402
+inject_init_lstm	5.539%	5.798	7.725
+merge_mult_srnn	5.391%	5.567	7.307
+inject_pre_lstm	5.341%	5.768	7.689
+vinyals	5.332%	5.787	7.689
+inject_post_srnn	5.260%	5.646	7.465
+inject_init_srnn	3.444%	5.413	7.092
+inject_pre_srnn	3.242%	5.391	6.970
+langmodel_srnn	0.121%	3.154	3.057
+langmodel_lstm	0.117%	3.081	2.992
+human-all	56.771%	8.210	12.428
+human-one	32.520%	8.109	11.846
+
+RETRIEVAL MEASURES
+experiment	R@1	R@5	R@10
+mao	21.927%	47.647%	59.813%
+merge_add_srnn	21.913%	47.740%	59.420%
+merge_concat_srnn	21.833%	47.420%	59.647%
+merge_concat_lstm	21.573%	47.313%	59.480%
+merge_add_lstm	21.233%	46.773%	58.793%
+inject_post_srnn	20.987%	46.233%	58.653%
+merge_mult_lstm	20.947%	46.520%	58.600%
+merge_mult_srnn	18.900%	43.820%	56.033%
+inject_post_lstm	18.447%	43.733%	55.913%
+inject_par_srnn	18.040%	42.120%	54.993%
+inject_par_lstm	17.247%	41.727%	54.333%
+inject_pre_lstm	14.860%	37.620%	50.287%
+vinyals	14.787%	37.773%	50.660%
+inject_init_lstm	14.513%	37.447%	49.780%
+inject_init_srnn	7.233%	22.093%	33.013%
+inject_pre_srnn	7.100%	22.267%	32.980%
+

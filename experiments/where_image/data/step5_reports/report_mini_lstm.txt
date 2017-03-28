@@ -1,0 +1,54 @@
+PROBABILITY MEASURES
+experiment	pplx_geomean	pplx_artmean	pplx_median
+merge_concat_lstm	18.740	41.934	16.236
+inject_post_lstm	18.868	45.652	16.143
+merge_add_lstm	18.943	38.647	16.500
+inject_init_lstm	19.108	43.358	16.435
+inject_par_lstm	19.142	41.422	16.629
+inject_pre_lstm	19.228	45.984	16.586
+merge_mult_lstm	23.655	96.770	19.939
+langmodel_lstm	24.740	55.003	20.914
+
+GENERATION MEASURES 1
+experiment	cider	meteor	rougel
+merge_mult_lstm	0.337	0.158	0.399
+merge_add_lstm	0.331	0.156	0.394
+merge_concat_lstm	0.320	0.155	0.393
+inject_post_lstm	0.320	0.152	0.386
+inject_par_lstm	0.318	0.152	0.388
+inject_pre_lstm	0.291	0.150	0.383
+inject_init_lstm	0.281	0.146	0.379
+langmodel_lstm	0.070	0.090	0.260
+
+GENERATION MEASURES 2
+experiment	bleu1	bleu2	bleu3	bleu4
+merge_mult_lstm	0.575	0.390	0.260	0.170
+merge_add_lstm	0.569	0.378	0.249	0.162
+merge_concat_lstm	0.569	0.374	0.243	0.156
+inject_par_lstm	0.544	0.365	0.240	0.155
+inject_post_lstm	0.542	0.366	0.242	0.158
+inject_pre_lstm	0.540	0.357	0.230	0.147
+inject_init_lstm	0.530	0.350	0.223	0.141
+langmodel_lstm	0.401	0.176	0.099	0.059
+
+DIVERSITY MEASURES
+experiment	known_vocab_used	unigram_entropy	bigram_entropy
+merge_concat_lstm	6.321%	5.729	7.620
+merge_add_lstm	6.231%	5.736	7.620
+inject_post_lstm	6.169%	5.931	7.894
+inject_par_lstm	5.795%	5.832	7.756
+merge_mult_lstm	5.710%	5.591	7.402
+inject_init_lstm	5.539%	5.798	7.725
+inject_pre_lstm	5.341%	5.768	7.689
+langmodel_lstm	0.117%	3.081	2.992
+
+RETRIEVAL MEASURES
+experiment	R@1	R@5	R@10
+merge_concat_lstm	21.573%	47.313%	59.480%
+merge_add_lstm	21.233%	46.773%	58.793%
+merge_mult_lstm	20.947%	46.520%	58.600%
+inject_post_lstm	18.447%	43.733%	55.913%
+inject_par_lstm	17.247%	41.727%	54.333%
+inject_pre_lstm	14.860%	37.620%	50.287%
+inject_init_lstm	14.513%	37.447%	49.780%
+

@@ -1,0 +1,27 @@
+PROBABILITY MEASURES
+experiment	pplx_geomean	pplx_artmean	pplx_median
+vinyals	18.405	36.507	16.029
+mao	19.404	40.023	16.961
+
+GENERATION MEASURES 1
+experiment	cider	meteor	rougel
+mao	0.325	0.156	0.395
+vinyals	0.290	0.148	0.379
+
+GENERATION MEASURES 2
+experiment	bleu1	bleu2	bleu3	bleu4
+mao	0.561	0.377	0.249	0.162
+vinyals	0.535	0.354	0.228	0.144
+
+DIVERSITY MEASURES
+experiment	known_vocab_used	unigram_entropy	bigram_entropy
+mao	6.339%	5.815	7.754
+vinyals	5.332%	5.787	7.689
+human-all	56.771%	8.210	12.428
+human-one	32.520%	8.109	11.846
+
+RETRIEVAL MEASURES
+experiment	R@1	R@5	R@10
+mao	21.927%	47.647%	59.813%
+vinyals	14.787%	37.773%	50.660%
+
