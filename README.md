@@ -8,6 +8,6 @@ Paper is still under review, comments welcome.
 Works on both python 2 and python 3 (except for the MSCOCO evaluation toolkit which requires python 2).
 
 Python dependencies (install all with pip):
-theano
-configparser
-future
+  * theano
+  * configparser
+  * future
