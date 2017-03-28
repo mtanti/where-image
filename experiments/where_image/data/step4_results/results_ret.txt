@@ -1,0 +1,49 @@
+architecture	rnn	run	R@1	R@5	R@10
+mao		1	0.2154	0.4684	0.594
+vinyals		1	0.15	0.3796	0.508
+merge_concat	srnn	1	0.218	0.4692	0.598
+merge_add	srnn	1	0.2166	0.4732	0.5886
+merge_mult	srnn	1	0.1928	0.4396	0.5616
+inject_post	srnn	1	0.2084	0.459	0.585
+inject_par	srnn	1	0.1784	0.418	0.5482
+inject_pre	srnn	1	0.0704	0.2268	0.335
+inject_init	srnn	1	0.0734	0.227	0.3348
+merge_concat	lstm	1	0.2246	0.4762	0.5952
+merge_add	lstm	1	0.2094	0.4584	0.5856
+merge_mult	lstm	1	0.2134	0.4664	0.5926
+inject_post	lstm	1	0.1826	0.4352	0.5634
+inject_par	lstm	1	0.173	0.4116	0.5376
+inject_pre	lstm	1	0.1486	0.3732	0.4988
+inject_init	lstm	1	0.1468	0.379	0.5058
+mao		2	0.2246	0.4794	0.5998
+vinyals		2	0.1508	0.3752	0.5044
+merge_concat	srnn	2	0.2168	0.4734	0.5904
+merge_add	srnn	2	0.2192	0.4774	0.5984
+merge_mult	srnn	2	0.1882	0.4348	0.553
+inject_post	srnn	2	0.207	0.464	0.5896
+inject_par	srnn	2	0.1812	0.4244	0.5566
+inject_pre	srnn	2	0.066	0.2248	0.3298
+inject_init	srnn	2	0.077	0.2242	0.3338
+merge_concat	lstm	2	0.2128	0.4698	0.5916
+merge_add	lstm	2	0.2144	0.4756	0.5912
+merge_mult	lstm	2	0.2132	0.4654	0.5842
+inject_post	lstm	2	0.1786	0.4292	0.5528
+inject_par	lstm	2	0.17	0.421	0.5476
+inject_pre	lstm	2	0.1512	0.3804	0.5102
+inject_init	lstm	2	0.1454	0.3706	0.4878
+mao		3	0.2178	0.4816	0.6006
+vinyals		3	0.1428	0.3784	0.5074
+merge_concat	srnn	3	0.2202	0.48	0.601
+merge_add	srnn	3	0.2216	0.4816	0.5956
+merge_mult	srnn	3	0.186	0.4402	0.5664
+inject_post	srnn	3	0.2142	0.464	0.585
+inject_par	srnn	3	0.1816	0.4212	0.545
+inject_pre	srnn	3	0.0766	0.2164	0.3246
+inject_init	srnn	3	0.0666	0.2116	0.3218
+merge_concat	lstm	3	0.2098	0.4734	0.5976
+merge_add	lstm	3	0.2132	0.4692	0.587
+merge_mult	lstm	3	0.2018	0.4638	0.5812
+inject_post	lstm	3	0.1922	0.4476	0.5612
+inject_par	lstm	3	0.1744	0.4192	0.5448
+inject_pre	lstm	3	0.146	0.375	0.4996
+inject_init	lstm	3	0.1432	0.3738	0.4998
